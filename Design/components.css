@@ -1,0 +1,63 @@
+/* All components */
+@import url("./style.css");
+/* Button */
+.btn
+{
+    color: #fff;
+    background-color: #000000fd;
+    border-radius: 2px;
+    border: 2px solid #000000fd;
+    outline: none;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    transition: all 0.6s ease-in 0s;
+}
+.btn-white
+{
+    color: #000000fd;
+    background-color: #db8a11;
+    border-radius: 2px;
+    border: 2px solid #db8a11;
+    outline: none;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    transition: all 0.6s ease-in 0s;
+}
+/* Link */
+a
+{
+    color: #000000fd;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+a:hover
+{
+    text-decoration: underline;
+    /* color: #fdec61; */
+}
+h1
+{
+    font-size: 34px;
+}
+p
+{
+    font-size: 16px;
+}
+img
+{
+    border-radius: 6px;
+}
+.section
+{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    transition: all 0.9s ease-in 0s;
+}
+.title h1
+{
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000fd;
+}

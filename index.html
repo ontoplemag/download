@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+	<!-- SEO -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ontop le mag, ontop mag, pop culture, mboa, 237">
+	<meta name="description" content="Retrouvez tout l'univers people 100% camerounais dans votre webzine pop culture.">
+	<meta name="robots" content="index,follow">
+	<!-- Link -->
+	<link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="Design/style.css">
+	<link rel="stylesheet" href="Design/responsive.css">
+	<link rel="stylesheet" href="Design/components.css">
+	<link rel="stylesheet" href="Library/animate.css">
+	<link rel="stylesheet" href="Library/tailwindcss/tailwind.min.css">
+	<!-- Title -->
+	<title>OnTop! Magazine</title>
+</head>
+<!-- Body of page -->
+<style>
+	body {
+		background-image:
+			linear-gradient(to top, rgba(0, 0, 0, 0.935) 60%,
+				rgba(0, 0, 0, 0.935)),
+			url('Img/star.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: center;
+		height: 100vh;
+		padding: 1em;
+	}
+
+	#homepage {
+		display: block;
+		padding-top: 15em;
+		text-align: center;
+	}
+
+	#homepage h1 {
+		animation: fadeInDown 1s;
+		font-size: 40px;
+		color: #f1f1f1;
+		line-height: 2.2;
+	}
+
+	#homepage p {
+		font-size: 18px;
+		color: #ddd;
+	}
+
+	#homepage .btn {
+		background-color: #db8a11;
+		font-weight: bold;
+		border: none;
+		color: var(--color);
+		padding: 0.8em 1em;
+	}
+</style>
+<!-- Body of document -->
+
+<body>
+	<div class="load">
+		<div>
+			<!-- <img src="Img/logo.png" alt="OnTop! Mag" style="opacity:0.1;" /> -->
+			<br><br><br><br>
+		</div>
+		<div class="loader-list">
+			<div class="one loader-top"></div>
+			/* <div class="two loader-top"></div>
+			<div class="three loader-top"></div>
+			<div class="four loader-top"></div>
+			<div class="loader" id="loader">0%</div>
+			<div class="one loader-bottom"></div>
+			<div class="two loader-bottom"></div>
+			<div class="three loader-bottom"></div> */
+			<div class="four loader-bottom"></div>
+		</div>
+	</div>
+	<div id="homepage">
+		<h1><b>OnTop! Magazine</b></h1>
+		<p>
+			Retrouvez tout l'univers people 100% camerounais dans votre webzine pop culture.
+		</p>
+		<br />
+		<p>
+			<a href="app.html" class="btn shadow-lg">Se connecter</a>
+		</p>
+	</div>
+	<script>
+		/* Loading web application */
+		var loader = document.getElementById('loader'),
+			load = document.getElementById('loading'),
+			myTime,
+			newTime = 0;
+
+		function loading() {
+			'use strict';
+			newTime = newTime + 1;
+			if (newTime > 100) {
+				newTime = 0;
+			} else {
+				loader.textContent = newTime + "%";
+			}
+		}
+		myTime = setInterval(loading, 14);
+
+		setTimeout(() => {
+			document.querySelector('.load').style.display = "none"
+		}, 2000);
+	</script>
+</body>
+
+</html>
